@@ -4,6 +4,7 @@ import {environment} from '../../../../environments/environment'
 import { BackendService } from 'src/app/services/backend.service';
 import { Router } from '@angular/router';
 import { SocketsioService } from 'src/app/services/socketsio.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-login',
@@ -16,6 +17,7 @@ export class LoginComponent implements OnInit {
   boton:boolean=false;
 
   constructor(private formBuilder:FormBuilder, private api:BackendService, private router: Router, private socket:SocketsioService) {
+    $('body').css("background-image","none");
     this.crearFormulario();
   }
 

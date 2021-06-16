@@ -1,0 +1,33 @@
+.estadioComponente{
+  width: 100%;
+  height: 100%;
+}
+@font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str1 {stroke:#FEFEFE;stroke-width:48.064}
+    .str2 {stroke:white;stroke-width:48.064}
+    .str3 {stroke:#FEFEFE;stroke-width:36.3172}
+    .str0 {stroke:#FEFEFE;stroke-width:46.4971}
+    .str4 {stroke:#B4B5B5;stroke-width:7.32496}
+    .str5 {stroke:#E63D24;stroke-width:7.32496}
+    .fil1 {fill:none}
+    .fil7 {fill:#00A0E3}
+    .fil9 {fill:lime}
+    .fil0 {fill:#14A34A}
+    .fil11 {fill:#1A1A1A}
+    .fil5 {fill:rgba(0, 60, 46, 0.5)}
+    .fil6 {fill:#CCCCCC}
+    .fil3 {fill:#CCCCCC}
+    .fil4 {fill:#CCCCCC}
+    .fil8 {fill:#E31E24}
+    .fil2 {fill:#FEFEFE}
+    .fil10 {fill:black}
+    .fnt0 {font-weight:normal;font-size:312.061px;font-family:'Arial'}
+
+    .fil5:hover{
+      cursor: pointer;
+      fill: rgba(255,233,0, 0.6);
+    }
+
+    .fil10:hover{
+      cursor: pointer;
+    }

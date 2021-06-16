@@ -1,0 +1,485 @@
+.padre-boletera{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre-boletera .navbar{
+  width: 100%;
+  height: 10vh;
+  background-color: #009975;
+  display: flex;
+  align-items: center;
+}
+
+.padre-boletera .navbar .nombreApp{
+  color: white;
+  width: 50%;
+  padding-left: 70px;
+}
+
+.padre-boletera .navbar .cerrarSesion{
+  width: 50%;
+  padding-right: 70px;
+}
+
+.padre-boletera .navbar .cerrarSesion button{
+  color: white;
+  background-color: red;
+  border: none;
+  padding: .8em;
+  border-radius: 30px;
+  float: right;
+}
+
+.padre-boletera .header{
+  width: 85%;
+  height: 120px;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre-boletera .header .nombre{
+  width: 50%;
+  display: flex;
+  justify-items: center;
+  height: 55%;
+}
+
+.padre-boletera .header .nombre .icono{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.padre-boletera .header .nombre .icono i{
+  color: #009975;
+}
+
+.padre-boletera .header .nombre .textos{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 100%;
+}
+
+.padre-boletera .header .nombre .textos .trabajador{
+  color: #009975;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.padre-boletera .header .logo{
+  width: 50%;
+  height: 55%;
+}
+
+
+.padre-boletera .header .logo .centrar{
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.padre-boletera .header .logo .centrar img{
+  height: 4.5em;
+  width: 4.5em;
+}
+
+.padre-boletera .padre-cuerpo{
+  width: 85%;
+  background-color: #eee;
+  border: solid 1px;
+  border-radius: 45px;
+  border-color: #009975;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio .flechas{
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 25px;
+  color: #009975;
+  padding-left: 40px;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio .flechas:hover{
+  cursor: pointer;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio .estadio{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio .colores{
+  width: 100%;
+  height: 10%;
+  border: solid 2px teal;
+}
+
+.padre-boletera .padre-cuerpo .padreEstadio .estadio .estadioComponente{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.padre-boletera .padre-cuerpo .carrito{
+  width: 40%;
+  border: solid 2px;
+  border-radius: 45px;
+  height: 85%;
+  margin-right: 2em;
+  border-color: #009975;
+  background-color: white;
+}
+
+.padre-boletera .padre-cuerpo .carrito .tituloCarrito{
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre-boletera .padre-cuerpo .carrito .tituloCarrito .parrafoCarrito{
+  height: 50%;
+  border: solid 1px #009975;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padre-boletera .padre-cuerpo .carrito .tituloCarrito .parrafoCarrito p{
+  color: #009975;
+  font-weight: 500;
+}
+
+
+.padre-boletera .padre-cuerpo .carrito .cuerpoCarrito{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.padre-boletera .padre-cuerpo .carrito .cuerpoCarrito .tablaCarrito{
+  height: 100%;
+  width: 75%;
+  overflow: auto;
+}
+
+.padre-boletera .padre-cuerpo .carrito .cuerpoCarrito .tablaCarrito table{
+  border-collapse: collapse;
+}
+
+
+.padre-boletera .padre-cuerpo .carrito .cuerpoCarrito .tablaCarrito table thead{
+  border-bottom: solid 2px #009975;
+  text-align: left;
+}
+
+.padre-boletera .padre-cuerpo .carrito table thead th{
+  padding-bottom: 5px;
+}
+
+.padre-boletera .padre-cuerpo .carrito table thead .descripcion{
+  width: 90%;
+}
+
+.padre-boletera .padre-cuerpo .carrito table thead .precio{
+  text-align: center;
+  width: 10%;
+}
+
+.padre-boletera .padre-cuerpo .carrito table tbody td{
+  padding-top: 10px;
+}
+
+.padre-boletera .padre-cuerpo .carrito table tbody .textoIcono{
+  display: flex;
+  align-items: center;
+}
+
+.padre-boletera .padre-cuerpo .carrito table tbody .textoIcono i{
+  color: #47704b;
+}
+
+.padre-boletera .padre-cuerpo .carrito table tbody .textoIcono span{
+  padding-right: 5px;
+  padding-left: 7px;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre{
+  width: 75%;
+  border-top: solid 2px #009975;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre .checkboxPadre{
+  display: flex;
+  width: 70%;
+  height: 45%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre .checkboxPadre .checkbox {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+
+/* hide the browser's default checkbox */
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre .checkboxPadre .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* create custom checkbox */
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre .checkboxPadre .checkbox .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border: 1px solid #009975;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+/* add background color when the checkbox is checked */
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .padre .checkboxPadre .checkbox input:checked ~ .check {
+  background-color: #009975;
+  border:none;
+}
+
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .total{
+  width: 70%;
+  height: 40%;
+  border: solid .8px #009975;
+  border-radius: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .total .totalRigth label{
+  color: #009975;
+  letter-spacing: .10em;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.padre-boletera .padre-cuerpo .carrito .footerCarrito .total .totalRigth span{
+  color: black;
+}
+
+.padre-boletera .metodosPago{
+  width: 85%;
+  height: 15vh;
+  display: flex;
+}
+
+.padre-boletera .metodosPago .texto{
+  letter-spacing: .50em;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.padre-boletera .metodosPago .texto span{
+  color: #009975;
+  padding-left: 35px;
+}
+
+.padre-boletera .metodosPago .pagos{
+  height: 100%;
+  width: 40%;
+  display: flex;
+}
+
+.padre-boletera .metodosPago .pagos .fp{
+  width: 35%;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.padre-boletera .metodosPago .pagos .fp span{
+  float: left;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.padre-boletera .metodosPago .pagos .iconosPagos{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 18px;
+  color: grey;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.padre-boletera .metodosPago .pagos .iconosPagos a:hover{
+  color: #009975;
+  cursor: pointer;
+}
+
+.padre-boletera .metodosPago .pagos .iconosPagos span{
+  padding-left: 5px;
+  color: black;
+}
+
+
+.padre-boletera .metodosPago .pagos .botonesPago{
+  height: 100%;
+  width: 35%;
+}
+
+.padre-boletera .metodosPago .pagos .botonesPago .acomodarMetodos{
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.padre-boletera .metodosPago .pagos .botonesPago .acomodarMetodos button{
+  padding: 10px;
+  width: 65%;
+  border: none;
+  border-radius: 30px;
+  background-color: #009975;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.padre-boletera .metodosPago .pagos .botonesPago .acomodarMetodos .cancelar{
+  background-color: red;
+}
+.str1 {stroke:#FEFEFE;stroke-width:9.64004}
+.str2 {stroke:#FEFEFE;stroke-width:9.64004}
+.str3 {stroke:#FEFEFE;stroke-width:11.2096}
+.str0 {stroke:#FEFEFE;stroke-width:14.3518}
+.str5 {stroke:#E63D24;stroke-width:2.26092}
+.str4 {stroke:#B4B5B5;stroke-width:2.26092}
+.fil1 {fill:none}
+.fil2 {fill:#FEFEFE}
+.fil9 {fill:#B4B5B5}
+.fil0 {fill:#14A34A}
+.fil8 {fill:#B4B5B5}
+.fil6 {fill:#B4B5B5}
+.fil10 {fill:#B4B5B5}
+.fil7 {fill:#CCCCCC}
+.fil5 {fill:#CCCCCC}
+.fil3 {fill:#CCCCCC}
+.fil4 {fill:#CCCCCC}
+
+.fil6:hover {fill:#6257c5}
+.fil8:hover {fill:#6257c5}
+.fil9:hover {fill:#6257c5}
+.fil10:hover {fill:#6257c5}
+
+.fil6:active {fill:#7f77ce}
+.fil5:active {fill:#7f77ce}
+
+.cancha svg .selector{
+  fill: rgb(23, 196, 196);
+
+}
+
+.cancha svg .selector:hover{
+  fill: rgb(46, 233, 233);
+}
+
+.cancha svg .selector:active{
+  fill: rgb(136, 255, 255);
+}
+
+.cancha svg .c0{
+  fill: rgb(18, 189, 23);
+}
+
+.cancha svg .c0:hover{
+  fill: rgb(31, 214, 37);
+}
+
+
+
+.butacas img{
+
+   margin-left: 60px;
+   z-index: 50;
+}
+
+.butacas svg {
+  position: absolute;
+  z-index: 100;
+}
+
+@font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+  .fil3 {fill:none}
+  .fil2 {fill:#a50808}
+  .fil0 {fill:rgb(202, 202, 202, 0.3);}
+  .fil1 {fill:rgb(8, 83, 106)}
+  .fnt0 {font-weight:normal;font-size:141.408px;font-family:'Arial'; z-index: 0;}
+  .fnt1 {font-weight:normal;font-size:207.02px;font-family:'Arial'}
+
+  .fil0:hover {fill:rgba(46, 207, 243)}
+
+  .fil0:active {fill:rgba(56, 215, 250, 0.6)}

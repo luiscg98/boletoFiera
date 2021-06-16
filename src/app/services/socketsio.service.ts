@@ -10,7 +10,6 @@ export class SocketsioService {
   statusConnect: boolean = false;
 
   constructor(private socket: Socket) {
-    console.log("socket.io service");
     this.checkStatus();
   }
 

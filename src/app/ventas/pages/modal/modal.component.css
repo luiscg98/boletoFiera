@@ -1,0 +1,55 @@
+
+
+.cuerpo-modal{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cuerpo-modal .padreImg{
+  width: 90%;
+  height: 70%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.cuerpo-modal img{
+  height: 250px;
+  width: 160px;
+}
+
+.cuerpo-modal .padreInput{
+  height: 20%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo-modal .padreInput .iFolio{
+  border: solid 1px #009975;
+  width: 85%;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.cuerpo-modal .padreInput .iFolio:focus{
+  border: solid 1px #009975;
+  outline: none;
+}
+
+.swal2-styled.swal2-cancel{
+  background-color: #009975 !important;
+}
+
+
+
+

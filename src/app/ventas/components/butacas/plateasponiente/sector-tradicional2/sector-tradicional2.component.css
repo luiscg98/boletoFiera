@@ -1,0 +1,25 @@
+@font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .fil5 {fill:none}
+    .fil1 {fill:black}
+    .fil2 {fill:#00B034}
+    .fil3 {fill:#2B2A29}
+    .fil4 {fill:#CABFCD}
+    .fil0 {fill:black}
+    .fnt5 {font-weight:normal;font-size:272.382px;font-family:'Arial'}
+    .fnt2 {font-weight:normal;font-size:291.313px;font-family:'Arial'}
+    .fnt0 {font-weight:normal;font-size:295.023px;font-family:'Arial'}
+    .fnt1 {font-weight:normal;font-size:316.314px;font-family:'Arial'}
+    .fnt6 {font-weight:normal;font-size:372.135px;font-family:'Arial'}
+    .fnt7 {font-weight:normal;font-size:372.144px;font-family:'Arial'}
+    .fnt4 {font-weight:normal;font-size:446.051px;font-family:'Arial'}
+    .fnt3 {font-weight:normal;font-size:494.926px;font-family:'Arial'}
+
+    .butaca-gray{fill:rgb(202, 202, 202, 0.3);}
+    .butaca-gray:hover{fill: rgba(202,202,202,1);cursor: pointer;}
+    .butaca-blue{fill:rgba(255,233,0, 0.6);}
+    .butaca-green{fill:rgb(0,153,117, 0.3);}
+
+.svg{
+  width: 80%;
+  height: 100%;
+}

@@ -1,3 +1,41 @@
-<p>buscar-cliente works!</p>
+<!-- <p>buscar-cliente works!</p>
 <button (click)="logOut()">Cerrar sesión</button>
+
+
+<p>jhesgfjhergbfjhrefgu</p> -->
+
+<div class="father-names">
+  <!-- <button (click)="logOut()">Cerrar sesión</button> -->
+  <div class="nombre-names">
+    <h2>SER     FIERA     ES     UN     ORGULLO</h2>
+  </div>
+  <div class="contenido-names">
+    <div class="imgLeon">
+      <img src="../../../../assets/logo.png" alt="">
+    </div>
+    <div class="formulario">
+      <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardarCliente()">
+        <span>Nombre del Cliente:</span>
+        <ng-select
+        class="custom"
+        [items]="clientes"
+        [clearable]="false"
+        bindLabel="nombreCompleto"
+        bindValue="_id"
+        formControlName= "cliente"></ng-select>
+        <div class="botonAceptar">
+          <button type="submit" class="acept">ACEPTAR</button>
+          <button type="button" class="close" (click)="logOut()">CERRAR SESIÓN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- <ng-select
+[items]="clientes"
+placeholder="Selecciona el trabajador"
+[clearable]="false"
+bindLabel="nombreCompleto"
+bindValue="_id"> -->
+
 

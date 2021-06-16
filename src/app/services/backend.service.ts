@@ -9,7 +9,6 @@ let urlBase='http://localhost:3000/api/';
 export class BackendService {
 
   constructor(private http:HttpClient) {
-    console.log("backenservice corriendo");
   }
 
   login(body:Object){

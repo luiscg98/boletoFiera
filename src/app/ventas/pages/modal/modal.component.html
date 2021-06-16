@@ -1,0 +1,15 @@
+<div class="cuerpo-modal">
+  <div class="padreImg">
+    <img *ngIf="sector=='C2'" src="../../../../assets/tarjetas/platea_pte_c2.jpg" alt="">
+    <img *ngIf="sector=='B2'" src="../../../../assets/tarjetas/platea_pte_b2.jpg" alt="">
+    <img *ngIf="sector=='TRA'" src="../../../../assets/tarjetas/platea_pte_tradicional.jpg" alt="">
+    <img *ngIf="sector=='ORI'" src="../../../../assets/tarjetas/platea_ote.jpg" alt="">
+    <!-- <img src="../../../../assets/tarjetas/platea_pte_c2.jpg" alt="">
+    <img src="../../../../assets/tarjetas/platea_pte_c2.jpg" alt="">
+    <img src="../../../../assets/tarjetas/platea_pte_c2.jpg" alt="">
+    <img src="../../../../assets/tarjetas/platea_pte_c2.jpg" alt=""> -->
+  </div>
+  <div class="padreInput">
+    <input class="iFolio" placeholder="FOLIO" (keyup.enter)="alerta(folio.value)" type="number" #folio>
+  </div>
+</div>

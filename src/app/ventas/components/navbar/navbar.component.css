@@ -1,0 +1,12 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: #009975;
+  border: solid 1px green;
+}
+
+.navbar .nombre{
+  color: white;
+}

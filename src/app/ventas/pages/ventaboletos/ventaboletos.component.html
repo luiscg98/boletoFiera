@@ -1,0 +1,117 @@
+
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="pagar()">
+  <div class="padre-boletera">
+    <div class="navbar">
+      <div class="nombreApp">
+        <h2>PALCOS Y PLATEAS</h2>
+      </div>
+      <div class="cerrarSesion">
+        <button type="button" (click)="logOut()">CERRAR SESION</button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="nombre">
+        <div class="icono">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </div>
+        <div class="textos">
+          <span class="trabajador">{{tokenDecode.trabajador}}</span>
+          <span>Cliente: {{cliente}}</span>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="centrar">
+          <img src="../../../../assets/logo.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="padre-cuerpo">
+      <div class="padreEstadio">
+        <div class="flechas">
+          <i (click)="regresar()" *ngIf="estadoComponente != 0" class="iconoFlecha fa fa-arrow-circle-left"></i>
+        </div>
+        <div class="estadio">
+          <app-estadio *ngIf="estadoComponente==0" class="estadioComponente"></app-estadio>
+          <app-sector-b2 *ngIf="estadoComponente==1" class="estadioComponente"></app-sector-b2>
+          <app-sector-c2 *ngIf="estadoComponente==2" class="estadioComponente"></app-sector-c2>
+          <app-sector-tradicional2 *ngIf="estadoComponente==4" class="estadioComponente"></app-sector-tradicional2>
+          <app-sector-tradicional *ngIf="estadoComponente==3" class="estadioComponente"></app-sector-tradicional>
+          <app-recuadro *ngIf="estadoComponente==5 && estadoOte==0" class="estadioComponente"></app-recuadro>
+          <app-plantilla-lateral *ngIf="estadoComponente==5 && (estadoOte==1 || estadoOte==19)" class="estadioComponente"></app-plantilla-lateral>
+          <app-plantilla-central *ngIf="estadoComponente==5 && (estadoOte!=0 && estadoOte!=1 && estadoOte!=19)" class="estadioComponente"></app-plantilla-central>
+        </div>
+      </div>
+      <div class="carrito">
+        <div class="tituloCarrito">
+          <div class="parrafoCarrito">
+            <p>Lugares Seleccionados</p>
+          </div>
+
+        </div>
+        <div class="cuerpoCarrito">
+          <div class="tablaCarrito">
+            <table>
+              <thead>
+                  <tr>
+                      <th class="descripcion">Descripción</th>
+                      <th class="precio">Precio</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let item of comprados; let i=index">
+                      <td class="textoIcono"> <i (click)="borrar(i)" class="fa fa-times-circle" aria-hidden="true"></i><span>{{comprados[i].butaca.identificador}}</span></td>
+                      <td> {{comprados[i].butaca.precio}}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="footerCarrito">
+          <div class="padre">
+            <div class="checkboxPadre">
+              <label class="checkbox">Venta
+                <input (click)="checkBox(0)" formControlName="venta" type="checkbox">
+                <span class="check"></span>
+              </label><br>
+              <label class="checkbox">Cortesía
+                <input (click)="checkBox(1)" formControlName="cortesia" type="checkbox">
+                <span class="check"></span>
+              </label><br>
+              <label class="checkbox">Amparado
+                <input (click)="checkBox(2)" formControlName="amparado" type="checkbox">
+                <span class="check"></span>
+              </label><br>
+            </div>
+            <div class="total">
+              <div class="totalRigth">
+                <label>TOTAL: <span>${{total}}</span> </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="metodosPago">
+      <div class="texto">
+        <span>SER FIERA ES UN ORGULLO</span>
+      </div>
+      <div class="pagos">
+          <div class="fp">
+            <span>Formas de Pago: </span>
+          </div>
+          <div class="iconosPagos">
+            <a class="efectivo" (click)="changeColor(1)"><i class="fa fa-money"> <span> Efectivo</span></i></a>
+            <a class="credito" (click)="changeColor(2)"><i class="fa fa-credit-card"><span> Credito</span></i></a>
+            <a class="ambos" (click)="changeColor(3)"><i class="fa fa-credit-card"><span> Ambos</span></i></a>
+          </div>
+          <div class="botonesPago">
+            <div class="acomodarMetodos">
+              <button type="submit" [disabled]="comprar">PAGAR</button>
+              <button type="button" (click)="cancelar()" class="cancelar">CANCELAR</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</form>
